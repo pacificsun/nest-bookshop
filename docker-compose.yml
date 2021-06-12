@@ -8,6 +8,6 @@ services:
       - ./:/app
     command: npm run start:dev
     ports:
-      - '3000:300'
-    entrypoint:
+      - '3000:3000'
+    environment:
       - MONGO_URL=mongodb+srv://developer:IZ2acz3iWdpmw7Im@nestdevopscluster.gdfyt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
